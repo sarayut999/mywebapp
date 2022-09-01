@@ -17,14 +17,14 @@ pipeline {
             }
         }
 
-        stage('Print Environment') {
+        stage('Environment') {
             steps {
                 sh('ls -al')
                 sh('printenv')
             }
         }
         
-        stage('Build docker image') {
+        stage('Build image') {
             steps {
                 script {
                     docker.withRegistry('', 'dockerhub') {

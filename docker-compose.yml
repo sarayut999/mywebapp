@@ -3,6 +3,6 @@ services:
   web:
     image: devsarayut/mywebapp:latest
     ports:
-      - '7001:3001'
+      - '3001:3001'
     environment:
       PORT: '3001'
